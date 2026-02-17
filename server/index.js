@@ -21,17 +21,17 @@ const JWT_SECRET = process.env.JWT_SECRET || "secretkey";
 // =============================
 // DATABASE CONNECTION (Railway)
 // =============================
-const pool = mysql.createPool({
-  host: process.env.MYSQLHOST,
-  user: process.env.MYSQLUSER,
-  password: process.env.MYSQLPASSWORD,
-  database: process.env.MYSQLDATABASE,
-  port: process.env.MYSQLPORT,
-  waitForConnections: true,
-  connectionLimit: 10
-});
+let pool;
 
-console.log("🔄 Connecting to Railway MySQL...");
+try {
+  console.log("🔄 Connecting to Railway MySQL...");
+
+  pool = mysql.createPool(process.env.MYSQL_URL);
+
+  console.log("✅ MySQL Pool Created");
+} catch (error) {
+  console.error("❌ Failed to create MySQL pool:", error);
+}
 
 // =============================
 // TEST ROUTE
@@ -124,7 +124,7 @@ app.post("/chat", async (req, res) => {
       {
         method: "POST",
         headers: {
-          "Authorization": `Bearer ${process.env.HF_TOKEN}`,
+          Authorization: `Bearer ${process.env.HF_TOKEN}`,
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
@@ -133,7 +133,7 @@ app.post("/chat", async (req, res) => {
             { role: "system", content: "You are a helpful AI assistant." },
             { role: "user", content: message }
           ],
-          max_tokens: 150,
+          max_tokens: 300,
           temperature: 0.7
         })
       }
