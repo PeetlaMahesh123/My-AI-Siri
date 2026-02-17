@@ -152,7 +152,7 @@
 .hero-content h1 {
   font-size: 42px;
   margin-bottom: 20px;
-  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+  background: linear-gradient(90deg, #ebeaee, #3b82f6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
