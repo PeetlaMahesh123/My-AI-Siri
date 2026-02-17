@@ -17,7 +17,7 @@ function App() {
     setMessage("");
 
     try {
-      const res = await axios.post("http://localhost:5000/chat", {
+      const res = await axios.post("https://my-ai-siri-production.up.railway.app/chat", {
         message,
         userId: 1
       });
