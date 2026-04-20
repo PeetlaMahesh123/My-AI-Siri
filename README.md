@@ -13,10 +13,7 @@
 Users can send text messages through a chat interface and receive intelligent AI-generated responses.
 
 
-This project is structured into two main parts:
 
-- 🖥️ Frontend (Client)
-- ⚙️ Backend (Server)
 
 ---
 
