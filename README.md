@@ -4,13 +4,7 @@
   <b>Full Stack AI-Powered Text Assistant</b> 💬  
   Built using Modern Web Technologies 🚀
 </p>
----
-## 📖 About The Project
 
-**My Siri AI** is a full-stack AI-based text assistant application.  
-Users can send text messages through a chat interface and receive intelligent AI-generated responses.
-
-This project is structured into two main parts:
 
 
 
