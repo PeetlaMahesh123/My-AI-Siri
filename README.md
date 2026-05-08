@@ -1,5 +1,5 @@
 
-<h1 align="center">🤖 My Siri AI</h1>
+
 <p align="center">
   <b>Full Stack AI-Powered Text Assistant</b> 💬  
   Built using Modern Web Technologies 🚀
