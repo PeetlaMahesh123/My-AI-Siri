@@ -42,12 +42,7 @@ My-Siri-AI/
 ```
 ## 🔹 Technologies Used
 
-- React.js
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- Axios
-- React Hooks
+
 
 
 ## 🔹 Features
