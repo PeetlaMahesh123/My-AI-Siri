@@ -24,7 +24,12 @@ This project is structured into two main parts:
 ## 🏗️ Project Structure
 
 ```
-
+My-Siri-AI/
+│
+├── client/        # Frontend (React Application)
+├── server/        # Backend (Node.js + Express API)
+└── .gitignore
+```
 
 
 ---
